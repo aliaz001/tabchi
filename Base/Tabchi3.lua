@@ -1,7 +1,7 @@
 redis = (loadfile "Data/redis.lua")()
 redis = redis.connect('127.0.0.1', 6379)
 channel_id = -1001135894458
-channel_user = "@BG_TeaM"
+channel_user = "@Music_Asheghaneh00"
 local forcejointxt = {'عزیزم اول تو کانالم عضو شو بعد بیا بحرفیم😃❤️\nآیدی کانالم :\n'..channel_user,'عه هنوز تو کانالم نیستی🙁\nاول بیا کانالم بعد بیا چت کنیم😍❤️\nآیدی کانالم :\n'..channel_user,'عشقم اول بیا کانالم بعد بیا پی وی حرف بزنیم☺️\nاومدی بگو 😃❤️\nآیدی کانالم :\n'..channel_user}
 local forcejoin = forcejointxt[math.random(#forcejointxt)]
 local BOT = 3
@@ -11,7 +11,7 @@ end
 	if redis:get('bibak'..BOT..'adminset') then
 		return true
 	else
-    	print("\n\27[36m                      @BG_Team \n >> Admin UserID :\n\27[31m                 ")
+    	print("\n\27[36m                      @Music_Asheghaneh00 \n >> Admin UserID :\n\27[31m                 ")
     	local admin=io.read()
 		redis:del("bibak"..BOT.."admin")
     	redis:sadd("bibak"..BOT.."admin", admin)
@@ -328,7 +328,7 @@ tdcli_function ({ID = "GetChatMember",chat_id_ = channel_id, user_id_ = msg.send
 						input_message_content_ = {ID = "InputMessageDocument",
 							document_ = {ID = "InputFileLocal",
 							path_ = tostring(naji)..".txt"},
-						caption_ = ""..tostring(matches).." List\n @BG_TeaM "}
+						caption_ = ""..tostring(matches).." List\n @Music_Asheghaneh00 "}
 					}, dl_cb, nil)
 					return io.popen("rm -rf "..tostring(naji)..".txt"):read("*all")
 				elseif text:match("^(markread) (.*)$") then
